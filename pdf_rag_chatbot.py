@@ -100,8 +100,7 @@ def create_chain(vectorstore):
     llm = ChatGoogleGenerativeAI(
         model="gemini-2.0-flash-exp",
         google_api_key=api_key,
-        temperature=0.3,
-        convert_system_message_to_human=True
+        temperature=0.3
     )
     
     memory = ConversationBufferMemory(
